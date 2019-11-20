@@ -1,4 +1,4 @@
-<template>
+<template lang="pug">
   <div>
     <h1>Уютный чатик</h1>
     <p>Привет, {{ user.name }}</p>

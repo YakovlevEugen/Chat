@@ -51,8 +51,8 @@ export default {
         if (!err) {
           const user = this.form.getFieldsValue()
 
-          this.$socket.emit('userJoined', user, data => {
-            if (typeof(data) === 'string') {
+          this.$socket.emit('userJoined', user, (data) => {
+            if (typeof data === 'string') {
               console.error(data)
             } else {
               user.id = data.userId
